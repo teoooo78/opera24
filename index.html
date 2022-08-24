@@ -197,6 +197,19 @@
     <!-- ============================================-->
 
 
+    <section class="py-6 py-md-8" id="defaultWhyUs">
+      <div class="container">
+        <div class="row flex-center">
+          <div class="col-12 mb-2 mb-lg-5 text-center">
+            <div id="instafeed"></div>
+            </div>
+
+            </div>
+
+            </div>
+
+            </section>
+
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
@@ -965,21 +978,19 @@
   <script src="./vendors/rellax/rellax.min.js"> </script>
   <script src="./vendors/fontawesome/all.min.js"></script>
   <script src="./vendors/lodash/lodash.min.js"></script>
+  <script src="./vendors/instafeed/instafeed.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
   <script src="./vendors/imagesloaded/imagesloaded.pkgd.js"></script>
   <script src="./vendors/gsap/gsap.js"></script>
   <script src="./vendors/gsap/customEase.js"></script>
   <script src="./vendors/gsap/drawSVGPlugin.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122907869-1"></script>
-  <!--script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-122907869-1');
-    </script-->
+  <script>
+     var feed = new Instafeed({
+      accessToken: '637520864463900'
+    });
+    feed.run();
+    </script>
   <script src="./assets/js/theme.js"></script>
 </body>
 
